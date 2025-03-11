@@ -29,14 +29,7 @@
     },
     "outlook": {
         "title": "Contact Me :)",
-        "content": "<div class='contact-container'>    <div class='title'> <h2>Contact Us</h2> <p>Swing by for a cup of coffee, or leave us a message:</p>  </div>      <div class='body'>  <form action='/action_page.php'>  <label for='fname'>First Name</label><input type='text' id='fname' name='firstname' placeholder='Jane'>   <label for='lname'>Last Name</label> <input type='text' id='lname' name='lastname' placeholder='Doe'>   <label for='email'>Email</label> <input type='text' id='email' name='mail'>
-        <label for='topic'>Topic of Interest</label> <textarea id='topic' name='topic' placeholder='...' style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-</div>",
-        "background": "images/file-explorer-bg.jpg",
+        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form action='/action_page.php'>  <input type='text' id='name' name='firstname' placeholder='Name'>   <input type='text' id='email' name='mail' placeholder='Email'>  <textarea id='topic' name='topic' placeholder='Reason for contact...'></textarea> <input type='submit' value='Submit'>    </form></div>   </div>",
         "open": false
     },
     "winrar": {

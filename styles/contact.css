@@ -1,0 +1,65 @@
+.education-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.title p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.form {
+    margin: 10px;
+    font-size: 12px;
+    font-family: "Silkscreen", serif;
+    font-style: normal;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input, textarea:focus{
+    border: 1px solid #ae00ff;
+}
+
+textarea {
+    resize: vertical;
+    height: 20px;
+}
+
+.submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #218838;
+}
