@@ -1,9 +1,8 @@
-.education-container {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 100%;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 21px);
+    height: calc(100% - 21px);
 }
 
 .title h1 {

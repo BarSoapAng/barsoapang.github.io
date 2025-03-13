@@ -145,6 +145,9 @@ function activateApp(window) {
         window.classList.add("active");
         appContent[window.id].open = true;
         document.getElementById('taskbar-' + window.id).classList.add('active');
+        if(window.id !== "outlook"){
+            newWindow.style.resize = 'both';
+        }
     } else {
         // If clicked outside any window, remove active state from all windows
         for(let win of allWindows) {
