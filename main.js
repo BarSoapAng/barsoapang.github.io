@@ -71,6 +71,12 @@ function minimizeApp(appId) {
 }
 
 function maximizeApp(appId) {
+    
+    if(appId === "outlook") {
+        // cannotMaximizeMessage(appId);
+        return;
+    }
+
     let appWindow = document.getElementById(appId);
     
     if (appWindow.style.width === '100vw' && appWindow.style.height === (window.innerHeight - 60) + 'px') {
@@ -126,6 +132,9 @@ function closeWebsite() {
     window.close();
 }
 
+function cannotMaximizeMessage(appId){
+    alert(`Sorry you can't make ${appId} window bigger :(`);
+}
 
 function activateApp(window) {
     
