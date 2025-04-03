@@ -29,7 +29,7 @@
     },
     "outlook": {
         "title": "Contact Me :)",
-        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form action='/action_page.php'>  <input type='text' id='name' name='firstname' placeholder='Name'>   <input type='email' id='email' name='mail' placeholder='Email'>  <textarea id='topic' name='topic' placeholder='Reason for contact...'></textarea> <input type='submit' value='Submit'>    </form></div>   </div>",
+        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form action='/send_email.php' method='post'>  <input type='text' id='name' name='name' placeholder='Name' required='' oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>   <input type='email' id='email' name='mail' placeholder='Email' required oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>  <textarea id='topic' name='topic' placeholder='Reason for contact...'></textarea> <input type='submit' value='Submit'>    </form></div>   </div>",
         "open": false
     },
     "winrar": {
