@@ -29,13 +29,12 @@
     },
     "outlook": {
         "title": "Contact Me :)",
-        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form action='/send_email.php' method='post'>  <input type='text' id='name' name='name' placeholder='Name' required='' oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>   <input type='email' id='email' name='mail' placeholder='Email' required oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>  <textarea id='topic' name='topic' placeholder='Reason for contact...'></textarea> <input type='submit' value='Submit'>    </form></div>   </div>",
+        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form enctype='text/plain' action='https://docs.google.com/forms/d/e/1FAIpQLScMFu6So6TgV3_N0p4PSk3LKgoQHWwrrFIWDzQEubM2o7Hhfw/formResponse?' target='hidden_iframe'>  <input type='text' id='entry.1984160437' name='entry.1984160437' placeholder='Name'>   <input type='email' id='entry.825902843' name='entry.825902843' placeholder='Email' required oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>  <textarea id='entry.885378680' name='entry.885378680' placeholder='Reason for contact...'></textarea> <input type='submit' value='Submit'>    </form>    <iframe name='hidden_iframe' id='hidden_iframe' style='display:none;' onload='if(submitted) {}'></iframe>   </div>   </div>",
         "open": false
     },
     "winrar": {
         "title": "Education",
         "content": "<div class='education-container'>   <div class='education-section'><a href='https://uwaterloo.ca/' target='_blank' rel='noopener noreferrer'>   <img src='images/education/waterlooLogo.png'></a><div class='edu'>  <div class='edu-header'>    <h1>University of Waterloo</h1> <p>2024 - 2029</p> </div>   <p>Bachelor of Mechatronics Engineering, Honours Co-op</p> <ul><li>GPA: 3.98/4.0</li><li>Relevant courses: Digital Computation (C++)</li></ul>  </div></div>      <div class='education-container'>   <div class='education-section'><a href='https://uwaterloo.ca/' target='_blank' rel='noopener noreferrer'>   <img src='images/education/waterlooLogo.png'></a><div class='edu'>  <div class='edu-header'>    <h1>University of Waterloo</h1> <p>2024 - 2029</p> </div>   <ul><li>Bachelor of Mechatronics Engineering, Honours Co-op</li><li>courses ig</li></ul>  </div></div></div>",
-        "background": "//images/desktopMisc/desktopBG.gif",
         "open": false
     }
 }
