@@ -40,6 +40,12 @@ function openApp(appId) {
         makeDraggable(newWindow);
         activateApp(newWindow);
         appContent[appId].open = true;
+        if (appId === 'outlook') {
+            setTimeout(() => {
+                document.getElementById('contact').style.display = 'block';
+                document.getElementById('thank-you-message').style.display = 'none';
+            }, 1); // Give time for DOM to render
+        }
     } else {
         if (appContent[appId].open) {
             console.log('Already open');
@@ -165,6 +171,18 @@ function activateApp(window) {
             document.getElementById('taskbar-' +  win.id).classList.add('open');
         }
     }
+}
+
+function formSubmitted() {
+    const form = document.getElementById('contact');
+    const thankYou = document.getElementById('thank-you-message');
+    const submitBtn = document.getElementById('submit');
+
+    submitBtn.disabled = true;
+    form.style.display = 'none';
+    thankYou.style.display = 'block';
+    submitBtn.disabled = false;
+    
 }
 
 let zCount = 10;

@@ -62,6 +62,12 @@ input[type=submit]:hover {
     border-color: rgb(193, 140, 209);
 }
 
+input[type=submit]:active {
+    background-color: #000000 !important;
+    color: #ffffff;
+    border-color: rgb(193, 140, 209);
+}
+
 textarea {
     border-radius: 4px;
     border: 2px solid rgb(244, 209, 255);
@@ -81,4 +87,11 @@ textarea {
 textarea:focus{
     outline: none;
     border: 2px solid rgb(193, 140, 209) !important;
+}
+
+#thank-you-message {
+    font-size: 12px;
+    margin-top: 20px;
+    color: rgb(109, 255, 150);
+    text-align: center;
 }
