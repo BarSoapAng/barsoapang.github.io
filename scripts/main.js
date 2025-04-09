@@ -23,7 +23,7 @@ function openApp(appId) {
                 <span>${appContent[appId]?.title}</span>
                 <div>
                     <button onclick="minimizeApp('${appId}')">-</button>
-                    <button onclick="maximizeApp('${appId}')">□</button>
+                    <button style="cursor: default;">□</button>
                     <button onclick="closeApp('${appId}')">x</button>
                 </div>
             </div>
@@ -33,18 +33,17 @@ function openApp(appId) {
                 </div>
             </div>
         `;
-        newWindow.style.top = '100px';
-        newWindow.style.left = '100px';
+        newWindow.style.top = '80px';
+        newWindow.style.left = '80px';
         newWindow.style.display = 'block';
         windowsContainer.appendChild(newWindow);
         makeDraggable(newWindow);
         activateApp(newWindow);
         appContent[appId].open = true;
         if (appId === 'outlook') {
-            setTimeout(() => {
-                document.getElementById('contact').style.display = 'block';
-                document.getElementById('message').style.display = 'none';
-            }, 1); // Give time for DOM to render
+            document.getElementById('contact').style.display = 'block';
+            document.getElementById('message').style.display = 'none';
+            document.getElementById('loading').style.display = 'none';
         }
     } else {
         if (appContent[appId].open) {
@@ -161,7 +160,7 @@ function activateApp(window) {
         appContent[window.id].open = true;
         document.getElementById('taskbar-' + window.id).classList.add('active');
         if(window.id !== "outlook"){
-            newWindow.style.resize = 'both';
+            window.style.resize = 'both';
         }
     } else {
         // If clicked outside any window, remove active state from all windows
@@ -171,25 +170,6 @@ function activateApp(window) {
             document.getElementById('taskbar-' +  win.id).classList.add('open');
         }
     }
-}
-
-function formLoading() {
-    const submitBtn = document.getElementById('submit');
-
-    submitBtn.disabled = true;
-    submitBtn.style.color = 'rgb(134, 9, 9)';
-    return true;
-}
-
-function formSubmitted() {
-    const form = document.getElementById('contact');
-    const msg = document.getElementById('message');
-    const submitBtn = document.getElementById('submit');
-
-    form.style.display = 'none';
-    msg.style.display = 'block';
-    submitBtn.disabled = false;
-    
 }
 
 let zCount = 10;
@@ -206,3 +186,4 @@ document.querySelectorAll(".icon").forEach(window => {
         openApp(appId);
     });
 });
+
