@@ -89,7 +89,7 @@ textarea:focus{
     border: 2px solid rgb(193, 140, 209) !important;
 }
 
-#thank-you-message {
+.message {
     font-size: 12px;
     margin-top: 20px;
     color: rgb(109, 255, 150);

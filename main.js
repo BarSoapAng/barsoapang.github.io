@@ -43,7 +43,7 @@ function openApp(appId) {
         if (appId === 'outlook') {
             setTimeout(() => {
                 document.getElementById('contact').style.display = 'block';
-                document.getElementById('thank-you-message').style.display = 'none';
+                document.getElementById('message').style.display = 'none';
             }, 1); // Give time for DOM to render
         }
     } else {
@@ -173,14 +173,21 @@ function activateApp(window) {
     }
 }
 
-function formSubmitted() {
-    const form = document.getElementById('contact');
-    const thankYou = document.getElementById('thank-you-message');
+function formLoading() {
     const submitBtn = document.getElementById('submit');
 
     submitBtn.disabled = true;
+    submitBtn.style.color = 'rgb(134, 9, 9)';
+    return true;
+}
+
+function formSubmitted() {
+    const form = document.getElementById('contact');
+    const msg = document.getElementById('message');
+    const submitBtn = document.getElementById('submit');
+
     form.style.display = 'none';
-    thankYou.style.display = 'block';
+    msg.style.display = 'block';
     submitBtn.disabled = false;
     
 }
