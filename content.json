@@ -18,7 +18,7 @@
     },
     "office": {
         "title": "Work Experiences",
-        "content": "<div class='work-container'>    <div class='wrapper'>   <span class='sticker'> <span class='front'> <span class='content'>I wan't it now!</span></span>    <span class='back'></span> </span> </div>",
+        "content": "<div class='work-container'>    <div class='wrapper'>   <span class='sticker'> <span class='front'> <div class='content'>      <h1>Ericsson</h1><br> <p>Jan 2025 - Apr 2025</p><br> <p>Cloud RAN Software Engineer</p>       </div></span>    <span class='back'></span> </span> <span class='experience'></span>  </div></div>",
         "width": "451px",
         "height": "451px",
         "open": false
