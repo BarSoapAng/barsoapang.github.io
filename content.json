@@ -7,7 +7,7 @@
     },
     "file-explorer": {
         "title": "Projects",
-        "content": "<img src='images/OfficeIcon.png' href='https://linkedin.com' target='_blank'>LinkedIn<\/img>",
+        "content": "<div id='post-it-area'> <div class='reveal post-it-wrapper'>  <div class='post-it'>BLAH BLAH BLAH</div> </div>  <div class='post-it-sticky'>   <div class='front post-it-wrapper'> <div class='post-it'></div>     </div>  </div>  <div class='job-header'> <h1>Ericsson</h1> <p>Jan 2025 - Apr 2025</p> </div>   <p>Cloud RAN Software Engineer</p>    <div class='post-it-sticky'>  <div class='back post-it-wrapper'>    <div class='post-it'></div> </div></div></div>",
         "background": "images/file-explorer-bg.jpg",
         "open": false
     },
@@ -18,7 +18,7 @@
     },
     "office": {
         "title": "Work Experiences",
-        "content": "<div id='post-it-area'> <div class='reveal post-it-wrapper'>  <div class='post-it'>BLAH BLAH BLAH</div> </div>  <div class='post-it-sticky'>   <div class='front post-it-wrapper'> <div class='post-it'></div>     </div>  </div>  <div class='job-header'> <h1>Ericsson</h1> <p>Jan 2025 - Apr 2025</p> </div>   <p>Cloud RAN Software Engineer</p>    <div class='post-it-sticky'>  <div class='back post-it-wrapper'>    <div class='post-it'></div> </div></div></div>",
+        "content": "<div class='work-container'>    <div class='wrapper'>   <span class='sticker'> <span class='front'> <span class='content'>I wan't it now!</span></span>    <span class='back'></span> </span> </div>",
         "width": "451px",
         "height": "451px",
         "open": false

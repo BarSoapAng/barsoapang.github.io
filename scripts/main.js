@@ -11,9 +11,6 @@ function openApp(appId) {
     let existingWindow = document.getElementById(appId);
     let taskbarIcon = document.getElementById('taskbar-' + appId);
 
-    if (appId === 'word') {
-        window.open("misc/resume.pdf");
-    }
     if (!existingWindow) {
         let newWindow = document.createElement('div');
         newWindow.classList.add('window');
@@ -44,6 +41,9 @@ function openApp(appId) {
             document.getElementById('contact').style.display = 'block';
             document.getElementById('message').style.display = 'none';
             document.getElementById('loading').style.display = 'none';
+        }
+        if (appId === 'word') {
+            window.open("misc/resume.pdf");
         }
     } else {
         if (appContent[appId].open) {
@@ -135,10 +135,6 @@ function makeDraggable(element) {
 // Close the website (simulate shutdown)
 function closeWebsite() {
     window.close();
-}
-
-function cannotMaximizeMessage(appId){
-    alert(`Sorry you can't make ${appId} window bigger :(`);
 }
 
 function activateApp(window) {
