@@ -1,3 +1,5 @@
+
+
 .sticker {
 	display: block;
 	position: absolute;
@@ -15,8 +17,8 @@
 	transition-delay: 0s;
 	opacity: 1;
 
-	.back,
-	.front {
+	.back, .front {
+		border-radius: 2px;
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -38,25 +40,39 @@
 	.front {
 		top: 0;
 		height: 200px;
+
 		.content {
 			position: absolute;
 			display: block;
-			width: 200px;
-			height: 200px;
-			background: #E15399;
-			color: #FFF;
-			font-size: 0.8em;
-			padding-left: 10px;
-			text-align: left;
+			box-sizing: border-box;
 			top: 0;
 			left: 0;
+			width: 200px;
+			height: 200px;
+			background: #c788a7;
 
-			& h1 {
+			color: #FFF;
+			font-size: 0.8em;
+			padding: 30px 10px 10px 10px;
+			text-align: left;
+			word-wrap: break-word;
+			
+			& br {
+				display: block;
+				content: "";
+				margin-top: 10px;
+			}
+
+			& #title {
 				font-size: 12px;
 			}
 			
-			& p {
-				font-size: 10px;
+			& #company {
+				font-size: 12px;
+			}
+
+			& #date {
+				font-size: 8px;
 			}
 
 		}
