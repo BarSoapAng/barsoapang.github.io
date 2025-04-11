@@ -11,14 +11,13 @@
     z-index: 10;
     width: 600px;
     height: 400px;
-    background: rgb(255, 252, 241);
-    border: 2px solid rgb(85, 49, 109);
+    background: #fff7f7;
+    border: 2px solid rgb(95, 57, 121);
     display: none;
     resize: none;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 5px;
     user-select: none;
-    overflow: hidden;
 }
 
 .window-header {
@@ -62,4 +61,12 @@
     align-items: center;
     box-shadow: none;
     border-radius: 0px;
+}
+
+h1 {
+    color: #5A3A61;
+}
+
+p, ul {
+    color: #6B4E71;
 }
