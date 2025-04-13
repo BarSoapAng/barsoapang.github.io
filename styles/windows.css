@@ -14,7 +14,7 @@
     background: #fff7f7;
     border: 2px solid rgb(95, 57, 121);
     display: none;
-    resize: none;
+    resize: both;
     overflow: visible;
     border-radius: 5px;
     user-select: none;

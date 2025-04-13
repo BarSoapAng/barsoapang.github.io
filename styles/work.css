@@ -1,5 +1,5 @@
 .work-container {
-	display: grid;
+	display: flex;
 }
 
 .sticker {
@@ -18,6 +18,7 @@
 	transform: translate3d(0, 0, 0);
 	transition:  0.25s;
 	opacity: 1;
+	pointer-events: none;
 
 	.back, .front {
 		border-radius: 2px;
@@ -59,6 +60,7 @@
 }
 
 .wrapper {
+	flex: 1;
 	width: 200px;
 	height: 200px;
 	background: #af9393;
@@ -80,6 +82,7 @@
 			
 			top: -200px;
 			height: 200px;
+			
 			&:before {
 				top: 0;
 			}
@@ -176,6 +179,7 @@
 		border-top-left-radius: 2px;
 		border-top-right-radius: 2px;
 		align-items: center;
+		overflow: hidden;
 
 		.close {
 			font-family:Arial, Helvetica, sans-serif;

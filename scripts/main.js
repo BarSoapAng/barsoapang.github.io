@@ -24,7 +24,7 @@ function openApp(appId) {
                     <button onclick="closeApp('${appId}')">x</button>
                 </div>
             </div>
-            <div class="window-body" style="padding: 10px; background: url('${appContent[appId].background}')">
+            <div class="window-body" style="padding: 10px;">
                 <div class="window-content">
                     ${appContent[appId]?.content}
                 </div>
@@ -32,6 +32,9 @@ function openApp(appId) {
         `;
         newWindow.style.top = '80px';
         newWindow.style.left = '80px';
+        newWindow.style.width = appContent[appId]?.width;
+        newWindow.style.height = appContent[appId]?.height;
+
         newWindow.style.display = 'block';
         windowsContainer.appendChild(newWindow);
         makeDraggable(newWindow);
