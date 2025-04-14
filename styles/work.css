@@ -14,9 +14,6 @@
 	width: 200px;
 	height: 200px;
 	
-	transition: 0.75s;
-	transform: translate3d(0, 0, 0);
-	transition:  0.25s;
 	opacity: 1;
 	pointer-events: none;
 
@@ -70,9 +67,6 @@
 	position: relative;
 
 	&:hover .sticker {
-		transition: 0.75s 0.25s;
-		transform: translate3d(-20px, -20px, 0) scale(1);
-		opacity: 0;
 		
 		.front {
 			height: 0;
@@ -80,8 +74,8 @@
 
 		.back {
 			
-			top: -200px;
-			height: 200px;
+			top: -175px;
+			height: 175px;
 			
 			&:before {
 				top: 0;
