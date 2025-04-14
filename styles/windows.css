@@ -45,6 +45,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .window-content {
+        height: 100%;
+    }
 }
 
 .window.active{
