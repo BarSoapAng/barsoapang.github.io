@@ -46,7 +46,7 @@ function openApp(appId) {
             document.getElementById('loading').style.display = 'none';
         }
         if (appId === 'word') {
-            window.open("misc/resume.pdf");
+            window.open("misc/AngelaZhou_Resume_VPortfolio.pdf");
         }
     } else {
         if (appContent[appId].open) {
