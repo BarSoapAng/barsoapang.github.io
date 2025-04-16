@@ -7,35 +7,28 @@
     },
     "file-explorer": {
         "title": "Projects",
-        "content": "<div id='post-it-area'> <div class='reveal post-it-wrapper'>  <div class='post-it'>BLAH BLAH BLAH</div> </div>  <div class='post-it-sticky'>   <div class='front post-it-wrapper'> <div class='post-it'></div>     </div>  </div>  <div class='job-header'> <h1>Ericsson</h1> <p>Jan 2025 - Apr 2025</p> </div>   <p>Cloud RAN Software Engineer</p>    <div class='post-it-sticky'>  <div class='back post-it-wrapper'>    <div class='post-it'></div> </div></div></div>",
-        "background": "images/file-explorer-bg.jpg",
         "open": false
     },
     "instagram": {
         "title": "Socials",
-        "content": "<a class='social-links' href='https://linkedin.com/in/angzhou8' target='_blank' rel='noopener noreferrer'><img src='images/socials/linkedinLogo.png' alt='LinkedIn'/></a><br><a class='social-links' href='https://github.com/BarSoapIllumi' target='_blank' rel='noopener noreferrer'><img src='images/socials/gitLogo.png' alt='Github'/></a>",
         "open": false
     },
     "office": {
         "title": "Work Experiences",
-        "content": "<div class='work-container'>    <div class='wrapper'>    <div class='popup'><div class='window-header'> <span class='close'>x</span></div> <ul><li>Multilevel CI test automation menu in CLI using Bash & Python. Used Pyppeteer and BeautifulSoup to scrape latest updates.</li><li>Resolved 5+ critical CI flow impediments.</li><li>Integrated Docker, K8s, and Prometheus with Grafana for pod monitoring and basic visualizations.</li></ul> </div>    <span class='content back'>    <br><p></p> <p id='skill'>Programming Languages:</p> <ul><li>Python, Bash</li></ul> <br> <p id='skill'>Technologies:</p> <ul><li>Linux, Kubernetes, Docker, Openshift Cluster, Grafana, Loki, Prometheus</li></ul>      </span>   <span class='sticker'> <span class='front'> <span class='content'>      <p id='title'>Cloud RAN 5G Software Developer Co-op</p><br> <p id='company'>Ericsson</p><br> <p id='date'>Jan 2025 - Apr 2025</p>    <p id='msg'>Hover Me!</p>   </span></span>    <span class='back'></span> </span>     </div>                <div class='wrapper'>    <div class='popup'><div class='window-header'> <span class='close'>x</span></div> <ul><li>Built a CLI tool in Shell Bash to automate CI test command generation, eliminating manual input errors and accelerating CI task setup by 60%.</li><li>RAWRAWRHKAJSHDJK AHSDKJA</li></ul> </div>    <span class='content'>    <br><p></p> <p id='skill'>Programming Languages:</p> <ul><li>Python, C++, C</li></ul> <br> <p id='skill'>Technologies:</p> <ul><li>Arduino, Fusion360</li></ul>      </span>   <span class='sticker'> <span class='front'> <span class='content'>      <p id='title'>Programming & Robotics Instructor</p><br> <p id='company'>Exceed Robotics</p><br> <p id='date'>Apr 2024 - Jul 2024</p>    <p id='msg'>Hover Me!</p>   </span></span>    <span class='back'></span> </span>     </div>          </div>",
         "width": "750px",
         "height": "400px",
         "open": false
     },
     "word": {
         "title": "Resume",
-        "content": "<div class='resume-container'><iframe class='resume-file' src='misc/AngelaZhou_Resume_VPortfolio.pdf'></iframe><br><a class='download-link' href='misc/resume.pdf' download>download</a></div>",
         "open": false
     },
     "outlook": {
         "title": "Contact Me :)",
-        "content": "<div class='contact-container'>    <div class='title'> <h1>Contact Me</h1> <p>Leave your information down below and I'll send you an email :)</p>  </div>      <div class='body'>  <form id='contact' enctype='text/plain' action='https://docs.google.com/forms/d/e/1FAIpQLScMFu6So6TgV3_N0p4PSk3LKgoQHWwrrFIWDzQEubM2o7Hhfw/formResponse?' target='hidden_iframe' onsubmit='return formLoading();'>  <input type='text' id='entry.1984160437' name='entry.1984160437' placeholder='Name'>   <input type='email' id='entry.825902843' name='entry.825902843' placeholder='Email' required oninvalid='this.setCustomValidity('Please Enter valid email')' oninput='setCustomValidity('')'>  <textarea id='entry.885378680' name='entry.885378680' placeholder='Reason for contact...'></textarea> <input id='submit' type='submit' value='Submit'>    </form>    <iframe name='hidden_iframe' id='hidden_iframe' style='display:none;' onload='formSubmitted()'></iframe>   <div id='loading'></div> <div id='message'> <img src='images/icons/OutlookIcon.png' alt='thank you image' height='50px'><p id='thank-you-message'>I'll be in contact with you soon!</p> </div>    </div>   </div>",
         "open": false
     },
     "winrar": {
         "title": "Education",
-        "content": "<div class='education-container'>   <div class='education-section'><a href='https://uwaterloo.ca/' target='_blank' rel='noopener noreferrer'>   <img src='images/education/waterlooLogo.png'></a><div class='edu'>  <div class='edu-header'>    <h1>University of Waterloo</h1> <p>2024 - 2029</p> </div>   <p>Bachelor of Mechatronics Engineering, Honours Co-op</p> <ul><li>GPA: 3.98/4.0</li><li>Relevant courses: Digital Computation (C++)</li></ul>  </div></div>      <div class='education-container'>   <div class='education-section'><a href='https://uwaterloo.ca/' target='_blank' rel='noopener noreferrer'>   <img src='images/education/waterlooLogo.png'></a><div class='edu'>  <div class='edu-header'>    <h1>University of Waterloo</h1> <p>2024 - 2029</p> </div>   <ul><li>Bachelor of Mechatronics Engineering, Honours Co-op</li><li>courses ig</li></ul>  </div></div></div>",
         "open": false
     }
 }

@@ -15,39 +15,47 @@ function openApp(appId) {
         let newWindow = document.createElement('div');
         newWindow.classList.add('window');
         newWindow.id = appId;
-        newWindow.innerHTML = `
-            <div class="window-header">
-                <span>${appContent[appId]?.title}</span>
-                <div>
-                    <button onclick="minimizeApp('${appId}')">-</button>
-                    <button style="cursor: default;">□</button>
-                    <button onclick="closeApp('${appId}')">x</button>
+        fetch(`content/${appId}.html`)
+        .then(response => response.text())
+        .then(content => {
+            newWindow.innerHTML = `
+                <div class="window-header">
+                    <span>${appId}</span>
+                    <div>
+                        <button onclick="minimizeApp('${appId}')">-</button>
+                        <button style="cursor: default;">□</button>
+                        <button onclick="closeApp('${appId}')">x</button>
+                    </div>
                 </div>
-            </div>
-            <div class="window-body" style="padding: 10px;">
-                <div class="window-content">
-                    ${appContent[appId]?.content}
+                <div class="window-body" style="padding: 10px;">
+                    <div class="window-content">
+                        ${content}
+                    </div>
                 </div>
-            </div>
-        `;
-        newWindow.style.top = '80px';
-        newWindow.style.left = '80px';
-        newWindow.style.width = appContent[appId].width ?? '620px';
-        newWindow.style.height = appContent[appId].height ?? '400px';
+            `;
+            newWindow.style.top = '80px';
+            newWindow.style.left = '80px';
+            newWindow.style.width = appContent[appId].width ?? '620px';
+            newWindow.style.height = appContent[appId].height ?? '400px';
 
-        newWindow.style.display = 'block';
-        windowsContainer.appendChild(newWindow);
-        makeDraggable(newWindow);
-        activateApp(newWindow);
-        appContent[appId].open = true;
-        if (appId === 'outlook') {
-            document.getElementById('contact').style.display = 'block';
-            document.getElementById('message').style.display = 'none';
-            document.getElementById('loading').style.display = 'none';
-        }
-        if (appId === 'word') {
-            window.open("misc/AngelaZhou_Resume_VPortfolio.pdf");
-        }
+            newWindow.style.display = 'block';
+            windowsContainer.appendChild(newWindow);
+            makeDraggable(newWindow);
+            activateApp(newWindow);
+            appContent[appId].open = true;
+
+            if (appId === 'outlook') {
+                document.getElementById('contact').style.display = 'block';
+                document.getElementById('message').style.display = 'none';
+                document.getElementById('loading').style.display = 'none';
+            }
+            if (appId === 'word') {
+                window.open("misc/AngelaZhou_Resume_VPortfolio.pdf");
+            }
+
+        })
+        .catch(error => console.log("Error loading content:", error));
+
     } else {
         if (appContent[appId].open) {
             console.log('Already open');
