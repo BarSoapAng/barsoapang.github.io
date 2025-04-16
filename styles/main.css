@@ -6,15 +6,11 @@
 @import url(education.css);
 @import url(contact.css);
 @import url(work.css);
-/* 
-* {
-    user-select: none;
-} */
+@import url(projects.css);
 
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 250, 223);
     background-size: cover;
     font-family: "Silkscreen", serif;
     font-style: normal;

@@ -1,0 +1,50 @@
+.project-container {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    height: 50%;
+    width: 100%;
+
+    &.left {
+        flex-direction: row;
+    }
+    &.right {
+        flex-direction: row-reverse;
+    }
+}
+
+.project-img {
+    width: 100px;
+    height: auto;
+    border: none;
+}
+
+.project-text {
+
+    & h1 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    & p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
+
+.github {
+    background-color: #fce1ff;
+    color: #6d6d6d;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 11px;
+}
