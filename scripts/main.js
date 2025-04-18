@@ -20,14 +20,14 @@ function openApp(appId) {
         .then(content => {
             newWindow.innerHTML = `
                 <div class="window-header">
-                    <span>${appId}</span>
+                    <span>${appContent[appId].title}</span>
                     <div>
                         <button onclick="minimizeApp('${appId}')">-</button>
                         <button style="cursor: default;">□</button>
                         <button onclick="closeApp('${appId}')">x</button>
                     </div>
                 </div>
-                <div class="window-body" style="padding: 10px;">
+                <div class="window-body">
                     <div class="window-content">
                         ${content}
                     </div>
