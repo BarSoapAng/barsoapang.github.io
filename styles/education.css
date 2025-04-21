@@ -11,10 +11,10 @@
     width: 98%;
 
     margin: 1%;
+    gap: 10%;
     box-sizing: border-box;
 
     overflow: hidden;
-    background-color: black;
 }
 
 .education-section {
@@ -24,7 +24,7 @@
 }
 
 .education-section img {
-    width: 200px;
+    width: 100px;
     aspect-ratio: 1/1;
     border: none;
 }

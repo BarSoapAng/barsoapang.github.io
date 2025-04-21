@@ -1,8 +1,18 @@
 .resume-container {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 21px);
-    height: calc(100% - 21px);
+    justify-content: center;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 98%;
+
+    margin: 1%;
+    box-sizing: border-box;
+
+    overflow: hidden;
 }
 
 iframe.resume-file {

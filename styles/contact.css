@@ -1,8 +1,18 @@
 .contact-container {
     display: flex;
+    justify-content: center;
+    position: absolute;
     flex-direction: column;
-    width: calc(100% - 21px);
-    height: calc(100% - 21px);
+
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 98%;
+
+    margin: 1%;
+    box-sizing: border-box;
+
+    overflow: hidden;
 }
 
 .title h1 {
@@ -13,6 +23,12 @@
 .title p {
     font-size: 12px;
     text-align: center;
+}
+
+.body {
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
 }
 
 input {
@@ -108,9 +124,9 @@ textarea:focus{
     display: flex;
     animation: l5-0 3s infinite steps(6);
     background:
-        linear-gradient(rgb(255, 255, 255) 0 0) 0 0/0% 100% no-repeat,
-        radial-gradient(circle 3px,rgb(124, 78, 155) 90%,#00000000) 0 0/20% 100%
-        rgb(255, 255, 255);
+        linear-gradient(#fff7f7 0 0) 0 0/0% 100% no-repeat,
+        radial-gradient(circle 3px,#5A3A61 90%,#00000000) 0 0/20% 100%
+        #fff7f7;
     overflow: hidden;
 }
 #loading::before {
@@ -118,7 +134,7 @@ textarea:focus{
     width: 20px;
     transform: translate(-100%);
     border-radius: 50%;
-    background: rgb(119, 75, 148);
+    background: #5A3A61;
     animation: 
         l5-1 .25s .153s infinite steps(5) alternate,
         l5-2  3s        infinite linear;
