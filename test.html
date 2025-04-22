@@ -1,0 +1,30 @@
+<div class="project-container" style="height: 300px; overflow-y: scroll;">
+    <div class="project" style="height: 500px; opacity: 0.4; background-color: lightblue;">Project 1</div>
+    <div class="project" style="height: 500px; background-color: lightgreen;">Project 2</div>
+    <div class="project" style="height: 500px; background-color: lightcoral;">Project 3</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    console.log("jQuery is ready!");
+
+    $('.project-container').scroll(function() {
+        var scroll = $(this).scrollTop();
+        var containerHeight = $(this).height();
+
+        $('.project').each(function() {
+            var projectPosition = $(this).offset().top - $(this).parent().offset().top;
+            var distanceFromTop = projectPosition - scroll;
+
+            var opacity = Math.abs((distanceFromTop - containerHeight) / containerHeight);
+
+            opacity = Math.min(opacity, 1);
+
+            console.log(opacity);
+
+            $(this).css({'opacity': opacity});
+        });
+});
+});
+</script>

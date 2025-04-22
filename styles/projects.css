@@ -2,12 +2,9 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
 
-    margin: 1%;
     padding: 5%;
     gap: 30%;
     box-sizing: border-box;
@@ -16,9 +13,12 @@
 
 .project {
     display: flex;
-    height: auto;
+    height: 100%;
     width: 100%;
+    flex: 0 0 100%;
     justify-content: space-between;
+
+    opacity: 1;
 
     &.left {
         flex-direction: row;
@@ -32,11 +32,13 @@
     width: 30%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    margin: auto 0;
     border: 1px solid red;
 }
 
 .project-text {
 
+    margin: auto 0;
     text-align: center;
     width: 65%;
     display: flex;
@@ -54,14 +56,19 @@
         margin: 0;
     }
 
-    & p {
-        font-size: 0.75rem;
+    & #project-skills {
+        font-size: 0.6rem;
         margin: 0;
+    }
+
+    & #project-description {
+        font-size: 0.75rem;
+        margin-top: 2%;
     }
 
 }
 
-.github {
+#github {
     background-color: #fce1ff;
     border: 2px solid rgb(193, 140, 209);
     color: #6d6d6d;
@@ -72,4 +79,8 @@
     font-family: "Silkscreen", serif;
     font-style: normal;
     font-size: 0.6rem;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
 }

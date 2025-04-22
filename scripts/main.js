@@ -184,13 +184,3 @@ document.addEventListener("mousedown", (event) => {
     let clickedWindow = event.target.closest(".window");
     activateApp(clickedWindow);
 });
-
-
-document.querySelectorAll(".icon").forEach(window => {
-    window.addEventListener("dblclick", () => {
-        console.log("Double click");
-        let appId = window.getAttribute("data-app"); // Get appId from data attribute
-        openApp(appId);
-    });
-});
-
