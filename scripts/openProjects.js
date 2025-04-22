@@ -1,3 +1,3 @@
-function openGithub(link){
-    window.open(link);
+function openLink(link){
+    window.open(`https://${link}`, '_blank');
 }

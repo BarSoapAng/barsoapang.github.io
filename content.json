@@ -1,8 +1,6 @@
 {
     "this-pc": {
         "title": "About Me",
-        "content": "<img src='images/OfficeIcon.png' href='https://linkedin.com' target='_blank'>LinkedIn<\/img>",
-        "background": "/images/file-explorer-bg.jpg",
         "open": false
     },
     "file-explorer": {

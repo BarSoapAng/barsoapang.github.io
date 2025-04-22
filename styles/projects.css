@@ -17,6 +17,8 @@
     width: 100%;
     flex: 0 0 100%;
     justify-content: space-between;
+   
+    margin: 0;
 
     opacity: 1;
 
@@ -33,7 +35,6 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     margin: auto 0;
-    border: 1px solid red;
 }
 
 .project-text {
@@ -44,31 +45,39 @@
     display: flex;
     flex-direction: column;
 
-    &.left{
-        margin-left: 5%;
-    }
-    &.right{
-        margin-right: 5%;
-    }
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+
+    margin-left: 2%;
+    margin-right: 2%;
 
     & h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin: 0;
     }
 
     & #project-skills {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
+        font-weight: 400;
         margin: 0;
     }
 
     & #project-description {
         font-size: 0.75rem;
-        margin-top: 2%;
+        margin-top: 6%;
     }
 
 }
 
-#github {
+.proj-links {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+}
+
+#github, #discord{
     background-color: #fce1ff;
     border: 2px solid rgb(193, 140, 209);
     color: #6d6d6d;
@@ -80,7 +89,7 @@
     font-style: normal;
     font-size: 0.6rem;
 
-    display: block;
+    position: relative;
     margin: 0 auto;
     margin-top: 4%;
 }
