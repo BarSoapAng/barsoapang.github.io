@@ -28,9 +28,7 @@ function openApp(appId) {
                     </div>
                 </div>
                 <div class="window-body">
-                    <div class="window-content">
-                        ${content}
-                    </div>
+                    ${content}
                 </div>
             `;
             newWindow.style.top = '80px';
@@ -52,7 +50,9 @@ function openApp(appId) {
             if (appId === 'word') {
                 window.open("misc/AngelaZhou_Resume_VPortfolio.pdf");
             }
-
+            if (appId === 'this-pc') {
+                maximizeApp(appId);
+            }
         })
         .catch(error => console.log("Error loading content:", error));
 

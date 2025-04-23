@@ -19,3 +19,11 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+h1 {
+    color: #5A3A61;
+}
+
+p, ul {
+    color: #6B4E71;
+}

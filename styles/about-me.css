@@ -5,11 +5,13 @@
     height: 100%;
     width: 100%;
 
-    padding: 5%;
-    gap: 30%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 
     overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
 }
 
 .me {
@@ -18,21 +20,21 @@
     height: 100%;
     width: 100%;
 
-    justify-content: space-between
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 2% 10%;
+    margin-bottom: 10%;
 }
 
 #me-pic {
-    height: 70%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     margin: auto;
 }
 
 .about-text {
-    margin: auto 3%;
-
-    & #redir-to-contact {
-        margin: 0 auto;
-    }
+    margin: auto;
+    margin-left: 5%;
 }
 
 h1 {
@@ -52,27 +54,47 @@ p {
     cursor: pointer;
     width: 100px;
     font-size: 0.6rem;
+    margin: 0 auto;
 }
 
 hr {
-    border-top: 1px solid red;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+
+    border-top: 0.1em solid #5A3A61;
+    color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
 .tech {
     display: flex;
-    flex-direction: row;
-    gap: 10%;
+    flex-direction: rpw;
+    flex-wrap: wrap;
+    gap: 2em;
 
     width: 100%;
+
+    margin-bottom: 1%;
+    justify-content: center;
 }
 
 .tool {
-    width: 80%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    
+    text-align: center;
 
     & img {
-        width: 100%;
+        width: 50%;
+        object-fit: cover;
         aspect-ratio: 1/1;
+    }
+
+    & p {
+        font-size: 1rem;
     }
 }

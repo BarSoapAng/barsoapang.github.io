@@ -5,10 +5,12 @@
     height: 100%;
     width: 100%;
 
-    padding: 5%;
+    padding: 0;
+    margin: 0;
     gap: 30%;
     box-sizing: border-box;
     overflow-y: scroll;
+    background-color: black;
 }
 
 .project {

@@ -4,12 +4,9 @@
     align-items: center;
     position: absolute;
 
-    top: 0;
-    left: 0;
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
 
-    margin: 1%;
     row-gap: 10%;
     column-gap: 5%;
     box-sizing: border-box;
@@ -24,7 +21,7 @@
 }
 
 .social-links img {
-    width: 50%;
+    width: 30%;
     aspect-ratio: 1/1;
 }
 
