@@ -1,4 +1,4 @@
-
+$(()=> {
     $('.project-container').scroll(function() {
         console.log("Scroll event triggered!"); 
         var scroll = $(this).scrollTop();
@@ -17,3 +17,4 @@
         //     $(this).css({'opacity': opacity});
         // });
     });
+});
