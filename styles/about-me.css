@@ -1,7 +1,7 @@
 .about-container {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
 
@@ -9,9 +9,8 @@
     margin: 0;
     box-sizing: border-box;
 
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
-    background-color: black;
 }
 
 .me {
@@ -20,25 +19,36 @@
     height: 100%;
     width: 100%;
 
+    flex-grow: 1;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 2% 10%;
-    margin-bottom: 10%;
+    margin: 1% auto;
 }
 
 #me-pic {
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: auto;
+    max-width: 400px;
 }
 
 .about-text {
+    width: 100%;
+    max-width: 600px;
     margin: auto;
     margin-left: 5%;
+    margin-right: 10%;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 1rem;
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 p {
@@ -57,13 +67,18 @@ p {
     margin: 0 auto;
 }
 
+.tech-header {
+    
+    margin: 1% 6% 2% 6%;
+    text-align: center;
+}
+
 hr {
     margin: 0;
     padding: 0;
     margin-bottom: 2em;
 
-    border-top: 0.1em solid #5A3A61;
-    color: rgba(0, 0, 0, 0);
+    border: 0.05em solid #5A3A61;
     width: 100%;
 }
 
@@ -75,7 +90,9 @@ hr {
 
     width: 100%;
 
+    margin: auto;
     margin-bottom: 1%;
+    align-items: center;
     justify-content: center;
 }
 
@@ -85,13 +102,14 @@ hr {
     align-items: center;
     justify-content: center;
     width: 20%;
+    max-width: 100px;
     
     text-align: center;
 
-    & img {
-        width: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
+    & svg {
+        width: 60%;
+        height: auto;
+        object-fit: contain;
     }
 
     & p {
