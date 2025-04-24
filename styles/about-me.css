@@ -16,28 +16,37 @@
 .me {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
+    width: 95%;
+    max-width: 1500px;
 
-    flex-grow: 1;
-    justify-content: space-between;
+    justify-content: start;
     box-sizing: border-box;
     padding: 2% 10%;
     margin: 1% auto;
+    background-color: blanchedalmond;
 }
 
 #me-pic {
-    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     width: 100%;
     margin: auto;
     max-width: 400px;
+    border-radius: 50%;
+}
+
+.spacer {
+    width: 20%;
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
 }
 
 .about-text {
     width: 100%;
     max-width: 600px;
     margin: auto;
-    margin-left: 5%;
     margin-right: 10%;
 }
 
@@ -64,7 +73,7 @@ p {
     cursor: pointer;
     width: 100px;
     font-size: 0.6rem;
-    margin: 0 auto;
+    margin: 0.5em auto;
 }
 
 .tech-header {
@@ -84,7 +93,7 @@ hr {
 
 .tech {
     display: flex;
-    flex-direction: rpw;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
 
