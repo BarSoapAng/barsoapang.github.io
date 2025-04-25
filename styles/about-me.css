@@ -23,7 +23,8 @@
     box-sizing: border-box;
     padding: 2% 10%;
     margin: 1% auto;
-    background-color: blanchedalmond;
+    border-radius: 1%;
+    background-color: rgb(255, 244, 226);
 }
 
 #me-pic {
@@ -72,8 +73,18 @@ p {
     font-size: 1rem;
     cursor: pointer;
     width: 100px;
+    font-size: 11px;
+    font-family: "Silkscreen", serif;
+    font-style: normal;
     font-size: 0.6rem;
     margin: 0.5em auto;
+    border: 2px solid rgb(244, 209, 255);
+}
+
+#redir-to-contact:active {
+    background-color: #cea1d3 !important;
+    color: #ffffff;
+    border-color: rgb(193, 140, 209);
 }
 
 .tech-header {

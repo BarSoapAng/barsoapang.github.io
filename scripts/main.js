@@ -33,8 +33,8 @@ function openApp(appId) {
             `;
             newWindow.style.top = '80px';
             newWindow.style.left = '80px';
-            newWindow.style.width = appContent[appId].width ?? '600px';
-            newWindow.style.height = appContent[appId].height ?? '400px';
+            newWindow.style.width = appContent[appId].width ?? '625px';
+            newWindow.style.height = appContent[appId].height ?? '425px';
 
             newWindow.style.display = 'block';
             windowsContainer.appendChild(newWindow);
