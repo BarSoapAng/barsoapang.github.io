@@ -23,7 +23,7 @@
     box-sizing: border-box;
     padding: 2% 10%;
     margin: 1% auto;
-    border-radius: 1%;
+    border-radius: 1rem;
     background-color: rgb(255, 244, 226);
 }
 
